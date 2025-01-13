@@ -3,9 +3,10 @@ Analyze dependencies and Identify vulnerabilities using OSV API
 
 ---
 
-### **Tool Description:**  
-- The **RepoVulnScan** is a Go-based tool that scans a GitHub repository to identify vulnerable dependencies in popular package manager files. It fetches the contents of dependency files and analyzes the listed dependencies using the OSV (Open Source Vulnerabilities) API. The tool supports various ecosystems like `npm`, `PyPI`, `Go`, `Maven`, and more.
+### Description:
 
+- The **RepoVulnScan** is a Go-based tool that scans a GitHub repository to identify vulnerable dependencies in popular package manager files. It fetches the contents of dependency files and analyzes the listed dependencies using the OSV (Open Source Vulnerabilities) API.
+- The tool supports various ecosystems like `npm`, `PyPI`, `Go`, `Maven`, `Gradle`, `crates.io` and more.
 - This tool is especially useful for developers and security professionals to assess the security posture of their software projects by quickly identifying potential vulnerabilities in their project's dependencies.
 
 ---
@@ -38,7 +39,24 @@ Analyze dependencies and Identify vulnerabilities using OSV API
    ```bash
    cd RepoVulnScan
    ```
-3. Build the tool:
+3. Initialize the Go module (if not already initialized):
+
+   If you haven't initialized the Go module yet, run:
+
+   ```bash
+   go mod init github.com/vettri007/RepoVulnScan
+   ```
+   
+4. Install dependencies and tidy up the module:
+
+   Run the following command to download and clean up any necessary dependencies:
+
+   ```bash
+   go mod tidy
+   ```
+   This will add any missing dependencies and remove any unused ones.
+   
+5. Build the tool:
    ```bash
    go build -o RepoVulnScan
    ```
@@ -95,12 +113,15 @@ Analyze dependencies and Identify vulnerabilities using OSV API
 ---
 
 ## Disclaimer
-This tool is provided "as is" and is not guaranteed to detect all vulnerabilities. Use it at your own discretion.
 ```
+This tool is provided "as is" and is not guaranteed to detect all vulnerabilities. While it helps identify potential security risks by scanning known package vulnerabilities, it may not catch every issue, especially new or unreported vulnerabilities.
 
-Let me know if you'd like further customization!
+Use this tool at your own discretion. The authors are not responsible for any damages or security issues arising from the use of this tool. Always supplement it with other security measures and manual reviews.
+```
+Let me know if you'd like further customization! or you'd like to contact me on Linkedln or Gmail
 
 Here my Linkedln -> www.linkedin.com/in/vettrivel2006 
 
 Here my Mail ID -> uvettrivel007@gmail.com 
 
+---
