@@ -4,9 +4,13 @@ Analyze dependencies and Identify vulnerabilities using OSV API
 ---
 
 ### **Tool Description:**  
-The **RepoVulnScan** is a Go-based tool that scans a GitHub repository to identify vulnerable dependencies in popular package manager files. It fetches the contents of dependency files (e.g., `package.json`, `requirements.txt`, `go.mod`) and analyzes the listed dependencies using the OSV (Open Source Vulnerabilities) API. The tool supports various ecosystems like `npm`, `PyPI`, `Go`, `Maven`, and more.
+- The **RepoVulnScan** is a Go-based tool that scans a GitHub repository to identify vulnerable dependencies in popular package manager files. It fetches the contents of dependency files and analyzes the listed dependencies using the OSV (Open Source Vulnerabilities) API. The tool supports various ecosystems like `npm`, `PyPI`, `Go`, `Maven`, and more.
 
-This tool is especially useful for developers and security professionals to assess the security posture of their software projects by quickly identifying potential vulnerabilities in their project's dependencies.
+- This tool is especially useful for developers and security professionals to assess the security posture of their software projects by quickly identifying potential vulnerabilities in their project's dependencies.
+
+---
+
+![repovuln](https://github.com/user-attachments/assets/35dd5683-62bd-4f70-b866-f9150f596965)
 
 ---
 
@@ -56,15 +60,6 @@ This tool is especially useful for developers and security professionals to asse
 
 ---
 
-## Example Output
-```plaintext
-Extracted package: express (Version: 4.17.1)
-No vulnerabilities found for package express (npm) (Version: 4.17.1).
-
-Extracted package: flask (Version: 2.0.2)
-Vulnerability found: OSV-2021-1234 (Severity: HIGH)
-```
----
 
 ## Supported Dependency Files
 - `package.json` (npm)
@@ -77,6 +72,7 @@ Vulnerability found: OSV-2021-1234 (Severity: HIGH)
 - `build.gradle` (Gradle)
 - `Cargo.toml` (crates.io)
 - `Cargo.lock` (crates.io)
+  
 ---
 
 ### **Requirements:**  
@@ -104,8 +100,7 @@ This tool is provided "as is" and is not guaranteed to detect all vulnerabilitie
 
 Let me know if you'd like further customization!
 
-```
-Here my Linkedln -> www.linkedin.com/in/vettrivel2006[www.linkedin.com/in/vettrivel2006]
-Here my Mail ID -> uvettrivel007@gmail.com[uvettrivel007@gmail.com]
+Here my Linkedln -> www.linkedin.com/in/vettrivel2006 
 
-```
+Here my Mail ID -> uvettrivel007@gmail.com 
+
